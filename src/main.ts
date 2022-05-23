@@ -200,7 +200,7 @@ const send = async () => {
     ]
   }
 
-  core.info(JSON.stringify(content))
+  core.info('Hello World')
 
   core.info(JSON.stringify(webhookBody))
 
@@ -211,6 +211,7 @@ const send = async () => {
 async function run() {
   try {
     await send()
+    core.info('Hello World')
   } catch (error) {
     core.error(error)
     core.setFailed(error.message)
