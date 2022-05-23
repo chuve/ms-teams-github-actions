@@ -200,7 +200,7 @@ const send = async () => {
     ]
   }
 
-  console.log(content);
+  core.info(JSON.stringify(content))
 
   core.info(JSON.stringify(webhookBody))
 
